@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/responsive_user_slider.iml" filepath="$PROJECT_DIR$/responsive_user_slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/responsive_user_slider_android.iml" filepath="$PROJECT_DIR$/android/responsive_user_slider_android.iml" />
+    </modules>
+  </component>
+</project>
