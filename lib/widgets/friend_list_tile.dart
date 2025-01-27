@@ -1,6 +1,8 @@
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_user_slider/utils/mock_data.dart';
 
 class FriendTile extends StatelessWidget {
   const FriendTile({
@@ -9,12 +11,14 @@ class FriendTile extends StatelessWidget {
     required this.bio,
     required this.title,
     required this.onTap,
+    required this.currentPage,
 
   });
 
   final String imagePath;
   final String bio;
   final String title;
+  final int currentPage;
 
   final void Function()? onTap;
 
@@ -27,7 +31,7 @@ class FriendTile extends StatelessWidget {
           shape: BoxShape.rectangle,
           borderRadius: BorderRadius.circular(10),
           image: DecorationImage(
-            image: NetworkImage(imagePath),
+            image: NetworkImage(data[currentPage]),
             fit: BoxFit.cover,
           ),
           boxShadow: [

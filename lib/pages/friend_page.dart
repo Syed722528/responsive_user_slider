@@ -13,7 +13,7 @@ class FriendPage extends StatefulWidget {
 }
 
 class _FriendPageState extends State<FriendPage> {
-  int _currentPage = 0;
+  int _currentPage = 0; // To keep track of the current page
 
 
   @override
@@ -58,6 +58,7 @@ class _FriendPageState extends State<FriendPage> {
                 return FractionallySizedBox(
                   widthFactor: 0.90,
                   child: FriendTile(
+                      currentPage:_currentPage,
                       imagePath: friends[index]['image'],
                       bio: friends[index]['bio'],
                       title: friends[index]['name'],
