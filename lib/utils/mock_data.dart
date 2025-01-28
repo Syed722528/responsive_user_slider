@@ -9,6 +9,7 @@
     "https://cdn.dribbble.com/users/3281732/screenshots/6590709/samji_illustrator.jpg?compress=1&resize=600x600",
   ];
 
+//------------------------------Mock data of the users to display------------------------//
     List<Map<String, dynamic>> friends = [
     {
       'name': 'Hassan',

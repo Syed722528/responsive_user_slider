@@ -15,7 +15,6 @@ class FriendPage extends StatefulWidget {
 class _FriendPageState extends State<FriendPage> {
   int _currentPage = 0; // To keep track of the current page
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +24,8 @@ class _FriendPageState extends State<FriendPage> {
           AnimatedSwitcher(
             duration: Duration(milliseconds: 500),
             child: Container(
-              key: ValueKey<String>(data[_currentPage]),
+              key: ValueKey<String>(data[
+                  _currentPage]), // Key is defined to make sure the Flutter know page os being changed
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
@@ -58,11 +58,12 @@ class _FriendPageState extends State<FriendPage> {
                 return FractionallySizedBox(
                   widthFactor: 0.90,
                   child: FriendTile(
-                      currentPage:_currentPage,
-                      imagePath: friends[index]['image'],
-                      bio: friends[index]['bio'],
-                      title: friends[index]['name'],
-                      onTap: () {}),
+                    currentPage: _currentPage,
+                    imagePath: friends[index]['image'],
+                    bio: friends[index]['bio'],
+                    title: friends[index]['name'],
+                    onTap: () {},
+                  ),
                 );
               },
             ),
